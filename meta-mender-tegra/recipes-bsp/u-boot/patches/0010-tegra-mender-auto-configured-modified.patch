@@ -1,4 +1,4 @@
-From a9ca40aaa5b33a2c9440d27141b0bd5c1610740a Mon Sep 17 00:00:00 2001
+From 451108af886eebedcde53a845107070b52cb1877 Mon Sep 17 00:00:00 2001
 From: Dan Walkes <danwalkes@trellis-logic.com>
 Date: Sat, 29 Jun 2019 12:17:30 -0600
 Subject: [PATCH] tegra mender auto configured modified
@@ -44,7 +44,7 @@ index d7182244cb..32df04aef1 100644
  
  #endif  /* _CONFIG_CMD_DISTRO_BOOTCMD_H */
 diff --git a/include/configs/p2771-0000.h b/include/configs/p2771-0000.h
-index 61310fbdf2..f586e340ce 100644
+index 1c8981b16f..6e7d8f596e 100644
 --- a/include/configs/p2771-0000.h
 +++ b/include/configs/p2771-0000.h
 @@ -23,10 +23,6 @@
@@ -71,7 +71,7 @@ index 4c4a1ea1c6..0446ba594b 100644
  /*
   * NS16550 Configuration
 diff --git a/include/configs/tegra186-common.h b/include/configs/tegra186-common.h
-index 3f96a45b18..215aef0b33 100644
+index 2a78513be4..86e2f17058 100644
 --- a/include/configs/tegra186-common.h
 +++ b/include/configs/tegra186-common.h
 @@ -54,7 +54,7 @@
@@ -81,5 +81,5 @@ index 3f96a45b18..215aef0b33 100644
 -	"kernel_addr_r=" __stringify(CONFIG_LOADADDR) "\0" \
 +	"loadaddr=" __stringify(CONFIG_LOADADDR) "\0" \
  	"fdt_addr_r=0x82000000\0" \
- 	"ramdisk_addr_r=0x82100000\0" \
- 	"fdt_copy_node_paths=" \
+ 	"ramdisk_addr_r=0x82100000\0"
+ 
